@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+html {
+  background: linear-gradient(
+    90deg,
+    rgba(207, 219, 231, 1) 0%,
+    rgba(12, 101, 126, 1) 100%
+  );
+}
+* {
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
+  padding: 0;
+  margin: 0;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 100px;
+  background-color: rgba(12, 103, 126, 0.651);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  color: blanchedalmond;
+  font-style: italic;
+  font-size: larger;
+}
+
+.container {
+  max-width: 100px auto;
+  flex-direction: column;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+  position: relative;
+}
+
+.box {
+  border: 0px solid rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+  border-radius: 15px;
+  width: 300px;
+  padding: 15px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 3px 0px 0px #000000;
+}
+
+.Box-2 {
+  padding: 0.08em;
+  margin: -1px 0px 1em;
+  text-align: center;
+}
+
+.Box-3 {
+  position: relative;
+  max-width: 100%;
+}
+
+.Left {
+  position: relative;
+  left: -10%;
+}
+
+.Right {
+  position: relative;
+  left: 10%;
+}
+
+.first {
+  margin-top: 10em;
+}
+
+.container::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 100%;
+  background: #ffffff;
+  top: 10em;
+  left: 50%;
+  margin-left: -3px;
+  z-index: -1;
+}
+
+.Right::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 25px;
+  background: #ffffff;
+  position: absolute;
+  right: 330px;
+  top: 19px;
+  z-index: -10;
+  margin-right: -0.4px;
+}
+
+.Left::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 25px;
+  background: #ffffff;
+  position: absolute;
+  left: 330px;
+  top: 19px;
+  z-index: -10;
+  margin-left: 0.4px;
+}
+
+.Left-arrow {
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 20px;
+  z-index: -1;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid white;
+  right: -10px;
+}
+
+.Right-arrow {
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 20px;
+  z-index: -1;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid white;
+  left: -10px;
+}
